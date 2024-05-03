@@ -1,0 +1,58 @@
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opciones li {
+  width: 80%;
+  cursor: pointer;
+}
+
+.opciones li a {
+  text-decoration: none;
+  color: white;
+}
+
+.animated-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.animated-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.7s ease;
+  z-index: 0;
+}
+
+.animated-btn:hover::before {
+  width: 0;
+  height: 0;
+}
+
+.animated-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-btn:hover {
+  background-color: #0056b3;
+}

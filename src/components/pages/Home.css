@@ -1,0 +1,30 @@
+.dashboard {
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black; */
+    height: 100vh;
+}
+
+.dashboard header{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(45, 45, 148);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.dashboard main{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
